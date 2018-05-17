@@ -1,0 +1,62 @@
+body{
+  width: 60%;
+  margin: 0 auto;
+}
+
+form {
+  margin: 0
+}
+
+p.action {
+  text-align: center;
+}
+
+.groupeQuestion {
+  margin: 0 0 2em;
+  padding: 0;
+  border: 0 none;
+  background: #ffd9d9;
+}
+
+.innerGroupeQuestion {
+  padding: 16px;
+}
+
+.innerGroupeQuestion.filtres {
+  padding-top: 0;
+}
+
+.sousGroupe label {
+  display: inline-block;
+  width: 150px;
+  padding: 1px 1% 0 0;
+  font-size: 1.167em;
+  font-weight: bold;
+  line-height: 38px;
+  color: #2b3941;
+}
+
+legend {
+  font-weight: normal;
+  background-color: #ed0000;
+  width: 100%;
+  margin: 0;
+  padding: 5px 13px;
+  font-size: 1.58em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+input.submit {
+  background-color: #ed0000;
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-size: 15px auto;
+  transition: all 0.3s;
+}
