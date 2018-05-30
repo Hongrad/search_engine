@@ -41,7 +41,7 @@ legend {
   background-color: #ed0000;
   width: 100%;
   margin: 0;
-  padding: 5px 13px;
+  padding: 0;//5px 13px;
   font-size: 1.58em;
   color: #fff;
   text-transform: uppercase;
