@@ -60,3 +60,30 @@ input.submit {
   background-size: 15px auto;
   transition: all 0.3s;
 }
+
+#research {
+  font-style: italic;
+}
+
+.liste{
+  padding: 0;
+}
+
+.item {
+  border: 1px solid grey;
+  padding: 10px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+h4{
+  margin-top: 0;
+}
+
+.info{
+  margin-bottom: 5px;
+}
+
+.auteur, .destinaire{
+  display: block;
+}

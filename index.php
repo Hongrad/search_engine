@@ -16,7 +16,7 @@ include('function.php') ;
         <div class="sousGroupe">
           <p>
             <label for="searchString">Mots-clés</label>
-            <input type="search" name="searchString" value="" placeholder="Votre recherche" autocomplete="off">
+            <input type="search" name="searchString" value="<?php echo isset($_GET['searchString']) ? $_GET['searchString'] : '' ?>" placeholder="Votre recherche" autocomplete="off">
             <p class="action">
               <input class="submit" type="submit" name="recherche" value="Rechercher">
             </p>
@@ -36,5 +36,22 @@ include('function.php') ;
       </div>
     </fieldset>
   </form>
+  <?php if(!empty($tabResultat)){ ?>
+    <h3>Résultats de la recherche "<span id="research"><?php echo $_GET['searchString']; ?></span>" : </h3>
+    <ul class="liste">
+    <?php foreach ($tabResultat as $mail) { ?>
+      <li class="item">
+        <h4><?php echo $mail['Sujet']; ?></h4>
+        <div class="info">
+          <span class="auteur"><strong>From</strong> : <?php echo $mail['Auteur'];?> - <?php echo $mail['Mail_Auteur']; ?></span>
+          <span class="destinataire"><strong>To</strong> : <?php echo $mail['Destinataire'];?> - <?php echo $mail['Destinataire_Mail'];?></span>
+        </div>
+        <div class="message">
+          <?php echo $mail['Contenu']; ?>
+        </div>
+      </li>
+    <?php } ?>
+    </ul>
+  <?php } ?>
 </body>
 </html>
