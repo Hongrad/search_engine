@@ -34,14 +34,14 @@ while ($donnees = $res->fetch())
     // On normalize afin de remplacer les caractères spéciaux
     $tabMotSujet[] = normalizer_normalize($mot, Normalizer::FORM_C );
   }
-  foreach(explode(" ",$donnees['Sujet']) as $mot){
+  /*foreach($tabMotSujet as $m){
     if(array_key_exists($mot,$arrayWordByMail)) {
       $arrayWordByMail[$mot]++;
     }
     else {
       $arrayWordByMail[$mot] = 1;
     }
-  }
+  }*/
 }
 $arrayWordOccurence = array_icount_values($tabMotSujet);
 var_dump($arrayWordOccurence);
